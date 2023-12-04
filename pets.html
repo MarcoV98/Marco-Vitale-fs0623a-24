@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <script src="pets.js" defer></script>
+    <style>
+        #petForm input, button {display: block;}
+    </style>
+</head>
+<body>
+    <h1>Insert your pet here!</h1>
+    <form id="petForm" onsubmit="addPet(); return false;">
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+
+        <label for="owner">Owner: </label>
+        <input type="text" id="owner">
+
+        <label for="species">Species:</label>
+        <input type="text" id="species">
+
+        <label for="breed">Breed:</label>
+        <input type="text" id="breed">
+
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Your Pets:</h2>
+    <ul id="petList">
+    </ul>
+</body>
+</html>
